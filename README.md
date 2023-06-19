@@ -20,8 +20,8 @@ In conclusion, this password generator is a tool that combines customization and
 
 ## Screenshot
 
-![FortiFy website screenshot](./assets/images/)
+![FortiFy website screenshot](./assets/images/FortiFy.jpeg)
 
 ## Link to the Deployed Application
 
-Link to Deployed Application: 
+Link to Deployed Application: https://kojootchere.github.io/FortiFy-The-Personalized-Password-Protector/
