@@ -11,7 +11,7 @@ var special = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~".split(""); // Array of specia
 function generatePassword() {
   // Ask the user for the password length
   var length = parseInt(prompt("Enter desired password length (choose between 8 and 128 characters)"));
-  
+
   // Check if the length is a number within the specified range
   if (isNaN(length) || length < 8 || length > 128) {
     alert("Please provide a valid length!");
@@ -41,7 +41,7 @@ function generatePassword() {
 
   // Initialize the password variable
   var password = "";
-  
+
   // Generate the password by picking random characters from the list
   for (var i = 0; i < length; i++) {
     password += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
@@ -55,7 +55,13 @@ function generatePassword() {
 function writePassword() {
   // Generate the password
   var password = generatePassword();
-  
+
+  // Check if the variable 'password' is undefined. If it is, terminate and exit the current function.
+  if (password === undefined) {
+    return
+  }
+
+
   // Select the password field
   var passwordText = document.querySelector("#password");
 
